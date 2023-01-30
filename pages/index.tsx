@@ -4,7 +4,7 @@ import Layout from "./layout";
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div className="text-bold text-2xl m-4">Hello, World!</div>
+      <div className="font-semibold text-2xl m-4">Hello, World!</div>
     </Layout>
   )
 }
