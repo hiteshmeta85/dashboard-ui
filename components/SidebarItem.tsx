@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import {SidebarItem as SidebarItemInterface} from "../contants/sidebarItems";
+import {SidebarItem as SidebarItemInterface} from "../constants/sidebarItems";
 
 interface Props extends SidebarItemInterface {}
 

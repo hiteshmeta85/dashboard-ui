@@ -1,5 +1,5 @@
 import React from 'react';
-import {taskBoardItems} from "../contants/taskBoardItems";
+import {taskBoardItems} from "../constants/taskBoardItems";
 import Image from "next/image";
 
 const TaskBoardNavigation = () => {

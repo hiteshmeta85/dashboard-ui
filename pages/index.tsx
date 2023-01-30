@@ -5,6 +5,7 @@ import SidebarNavigation from "../components/SidebarNavigation";
 import UserSwitch from "../components/UserSwitch";
 import TopNavigation from "../components/TopNavigation";
 import TaskBoardNavigation from "../components/TaskBoardNavigation";
+import RightSidebar from "../components/RightSidebar";
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +23,9 @@ const Home: NextPage = () => {
           <TopNavigation/>
           <TaskBoardNavigation/>
         </div>
-        <div></div>
+        <div className='min-h-full'>
+          <RightSidebar/>
+        </div>
       </div>
     </Layout>
   );

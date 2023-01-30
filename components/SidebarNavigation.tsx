@@ -1,5 +1,5 @@
 import React from 'react';
-import {sidebarItems} from "../contants/sidebarItems";
+import {sidebarItems} from "../constants/sidebarItems";
 import Image from "next/image";
 import SidebarItem from "./SidebarItem";
 
@@ -13,7 +13,7 @@ const SidebarNavigation = () => {
               <p className='text-[#98A2B2] text-[12px] font-semibold'>{item.section}</p>
               <Image src={'/images/expand_less.svg'} alt={'Icon'} width={20} height={20}/>
             </div>
-            <div className='flex flex-col gap-[28px]'>
+            <div className='flex flex-col gap-5'>
               {item.items.map((sidebarItem, index) => {
                 return (
                   <SidebarItem key={index} {...sidebarItem}/>

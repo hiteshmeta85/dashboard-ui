@@ -1,6 +1,6 @@
 import React from 'react';
 import {useRouter} from "next/router";
-import {topNavItems} from "../contants/topNavItems";
+import {topNavItems} from "../constants/topNavItems";
 import Image from "next/image";
 
 const TopNavigation = () => {
