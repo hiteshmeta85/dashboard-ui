@@ -3,11 +3,12 @@ import Layout from "./layout";
 import Image from "next/image";
 import SidebarNavigation from "../components/SidebarNavigation";
 import UserSwitch from "../components/UserSwitch";
+import TopNavigation from "../components/TopNavigation";
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div className='flex bg-[#F7F8FA]'>
+      <div className='flex bg-[#F7F8FA] min-h-screen'>
         <div className='overflow-y-scroll border-r-[1px] border-[#E9EBF0]'>
           <div className='flex items-center justify-between border-b-[1px] border-[#E9EBF0] py-[30px] px-[32px]'>
             <p className='font-semibold text-xl'>Dashboard</p>
@@ -16,7 +17,9 @@ const Home: NextPage = () => {
           <UserSwitch/>
           <SidebarNavigation/>
         </div>
-        <div></div>
+        <div className='flex-1'>
+          <TopNavigation/>
+        </div>
         <div></div>
       </div>
     </Layout>
