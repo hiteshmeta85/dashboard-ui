@@ -7,6 +7,7 @@ import TopNavigation from "../components/TopNavigation";
 import TaskBoardNavigation from "../components/TaskBoardNavigation";
 import RightSidebar from "../components/RightSidebar";
 import BoardSection from "../components/BoardSection";
+import CustomizeMenu from "../components/CustomizeMenu";
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
         <div className='flex-1'>
           <TopNavigation/>
           <TaskBoardNavigation/>
+          <CustomizeMenu/>
           <BoardSection/>
         </div>
         <div className='min-h-full'>
