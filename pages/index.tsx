@@ -13,7 +13,7 @@ import {motion} from 'framer-motion';
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div className='flex bg-[#F7F8FA] min-h-screen'>
+      <div className='flex flex-col lg:flex-row bg-[#F7F8FA] min-h-screen'>
         <motion.div
           initial={{x: -300}}
           animate={{x: 0}}
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
           initial={{x: 300}}
           animate={{x: 0}}
           transition={{delay: 1, type: 'spring', stiffness: 50}}
-          className='min-h-full'
+          className='min-h-full hidden lg:block'
         >
           <RightSidebar/>
         </motion.div>

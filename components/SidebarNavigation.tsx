@@ -5,7 +5,7 @@ import SidebarItem from "./SidebarItem";
 
 const SidebarNavigation = () => {
   return (
-    <div className='flex flex-col pb-[30px] px-[32px]'>
+    <div className='hidden lg:flex flex-col pb-[30px] px-[32px]'>
       {sidebarItems.map((item, index) => {
         return (
           <div key={index} className='flex flex-col py-[30px] border-b-[1px] border-[#E9EBF0]'>

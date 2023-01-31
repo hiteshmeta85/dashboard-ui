@@ -9,14 +9,14 @@ const TaskBoardNavigation = () => {
         <p className='text-[#1F2633] font-semibold text-3xl'>Task Boards</p>
         <Image src="/images/edit.svg" alt="arrow" width={20} height={20} className='cursor-pointer'/>
       </div>
-      <div className='flex gap-[32px]'>
+      <div className='hidden xl:flex gap-[32px]'>
         {taskBoardItems.map((item, index) => {
           return (
             <p key={index} className={`font-semibold text-[11px] cursor-pointer ${item.section === '#' ? 'text-[#3B82F6] underline decoration-1 decoration-[#3B82F6] underline-offset-8' : 'text-[#7A8699]'}`}>{item.name}</p>
           )
         })}
       </div>
-      <div className='flex items-center gap-2'>
+      <div className='hidden xl:flex items-center gap-2'>
         <div className="flex -space-x-4">
           <Image src="/images/avatar-1.jpg" alt="Icon" width={40} height={40} className='border-2 border-white rounded-full'/>
           <Image src="/images/avatar-2.jpg" alt="Icon" width={40} height={40} className='border-2 border-white rounded-full'/>

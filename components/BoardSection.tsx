@@ -4,7 +4,7 @@ import {backlogTasks, doneTasks, inProgressTasks, todoTasks} from "../constants/
 
 const BoardSection = () => {
   return (
-    <div className='grid grid-cols-4 px-[36px] pb-[28px] gap-[24px]'>
+    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 px-[36px] pb-[28px] gap-[24px]'>
       <ProgressLayout
         status={'Backlog Tasks'}
         taskTextColor={'text-[#CA8A04]'}
