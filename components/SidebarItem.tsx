@@ -8,7 +8,7 @@ const SidebarItem = (props: Props) => {
   const {icon, name, notification} = props;
 
   return (
-    <div className='flex items-center justify-between gap-4'>
+    <div className='flex items-center justify-between gap-4 cursor-pointer'>
       <div className='flex items-center gap-2'>
         <Image src={icon} alt={'Icon'} width={20} height={20}/>
         <p className='text-[12px] font-medium'>{name}</p>

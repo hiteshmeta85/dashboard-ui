@@ -16,7 +16,7 @@ const TaskCard = (props: Props) => {
         <p className='text-[12px] font-medium text-[#1F2633]'>{name}</p>
         {attachments > 0 &&
           <div className='flex items-center gap-2 w-12 justify-end'>
-          <Image src={'/images/task-1.svg'} alt={'Icon'} width={20} height={20}/>
+          <Image src={'/images/task-1.svg'} alt={'Icon'} width={20} height={20} className='cursor-pointer'/>
           <p className='text-[#33BFFF] text-[10px] font-bold'>{attachments}</p>
         </div>}
       </div>
@@ -37,17 +37,17 @@ const TaskCard = (props: Props) => {
                 <Image key={index} src={assignee} alt="Icon" width={32} height={32} className='border-2 border-white border-white rounded-full'/>
               )
             })}
-            {assignees.length > 2 && <p className="flex items-center justify-center w-8 h-8 text-xs font-medium text-[#606C80] bg-[#F2F4F7] rounded-full">+{assignees.length - 2}</p>}
+            {assignees.length > 2 && <p className="flex items-center justify-center w-8 h-8 text-xs font-medium text-[#606C80] bg-[#F2F4F7] rounded-full cursor-pointer">+{assignees.length - 2}</p>}
           </div>}
-          <Image src="/images/add_button.svg" alt="Icon" width={32} height={32}/>
+          <Image src="/images/add_button.svg" alt="Icon" width={32} height={32} className='cursor-pointer'/>
         </div>
         <div className='flex items-center gap-1.5'>
           {files > 0 && <>
-            <Image src="/images/file_present.svg" alt="Icon" width={20} height={20}/>
+            <Image src="/images/file_present.svg" alt="Icon" width={20} height={20} className='cursor-pointer'/>
             <p className='text-[#33BFFF] text-[10px] font-bold'>{files}</p>
           </>}
           {comments > 0 && <>
-            <Image src="/images/message.svg" alt="Icon" width={20} height={20}/>
+            <Image src="/images/message.svg" alt="Icon" width={20} height={20} className='cursor-pointer'/>
             <p className='text-[#33BFFF] text-[10px] font-bold'>{comments}</p>
           </>}
         </div>

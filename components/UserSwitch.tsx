@@ -12,7 +12,7 @@ const UserSwitch = () => {
             <p className='text-[#B8BFCC] font-semibold text-[11px]'>Designer</p>
           </div>
         </div>
-        <Image src={'/images/unfold_more.svg'} alt={'Icon'} width={20} height={20}/>
+        <Image src={'/images/unfold_more.svg'} alt={'Icon'} width={20} height={20} className='cursor-pointer'/>
       </div>
     </div>
   );
