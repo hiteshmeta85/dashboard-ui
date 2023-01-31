@@ -14,7 +14,7 @@ const CustomizeMenu = () => {
     <div className='flex justify-between items-center px-[36px] pb-[28px]'>
       <div className='flex justify-between items-center gap-4'>
         <div className='drop-shadow-sm bg-white grid grid-cols-2 gap-2 rounded-lg border-[1px] border-[#EBEEF2]'>
-          <div className='flex items-center gap-2 bg-[#FAFBFC] p-[8px] border-r-[1px] border-[#EBEEF2]'>
+          <div className='flex items-center gap-2 bg-[#FAFBFC] p-[8px] rounded-l-lg border-r-[1px] border-[#EBEEF2]'>
             <Image src={'/images/dashboard.svg'} alt="Icon" width={20} height={20}/>
             <p className='text-[#606C80] text-[12px] font-semibold'>Board View</p>
           </div>
