@@ -28,7 +28,10 @@ const TopNavigation = () => {
       <div className='flex items-center gap-3'>
         <Image src={'/images/folder_open.svg'} alt={'Icon'} width={20} height={20}/>
         <Image src={'/images/notifications_none.svg'} alt={'Icon'} width={20} height={20}/>
-        <Image src={'/images/avatar.jpeg'} alt={'Avatar'} width={30} height={30} className='rounded-full p-[2px] ring-2 ring-[#3B82F6]'/>
+        <div className='relative'>
+          <Image src={'/images/avatar.jpeg'} alt={'Avatar'} width={30} height={30} className='rounded-full p-[2px] ring-2 ring-[#3B82F6]'/>
+          <span className={`-top-1 left-4 absolute text-[10px] bg-red-500 px-[6px] py-[2px] rounded-full text-white font-bold`}>4</span>
+        </div>
       </div>
     </div>
   );

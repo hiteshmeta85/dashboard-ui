@@ -6,13 +6,13 @@ const TaskBoardNavigation = () => {
   return (
     <div className='flex justify-between items-center px-[36px] py-[28px]'>
       <div className='flex items-center gap-[24px]'>
-        <p className='text-[#1F2633] font-semibold text-2xl'>Task Boards</p>
+        <p className='text-[#1F2633] font-semibold text-3xl'>Task Boards</p>
         <Image src="/images/edit.svg" alt="arrow" width={20} height={20}/>
       </div>
       <div className='flex gap-[32px]'>
         {taskBoardItems.map((item, index) => {
           return (
-            <p key={index} className={`font-semibold text-[11px] ${item.section === '#' ? 'text-[#3B82F6] border-b-[1px] border-[#3B82F6]' : 'text-[#7A8699]'}`}>{item.name}</p>
+            <p key={index} className={`font-semibold text-[11px] ${item.section === '#' ? 'text-[#3B82F6] underline decoration-1 decoration-[#3B82F6] underline-offset-8' : 'text-[#7A8699]'}`}>{item.name}</p>
           )
         })}
       </div>

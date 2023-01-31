@@ -39,7 +39,7 @@ export const rightSidebarItems: RightSidebarItems = [
   },
   {
     icon: '/images/avatar-1.jpg',
-    notification: 10,
+    notification: 0,
     isActive: false,
   },
   {
@@ -69,7 +69,7 @@ export const rightSidebarItems: RightSidebarItems = [
   },
   {
     icon: '/images/avatar-3.jpg',
-    notification: 12,
+    notification: 0,
     isActive: false,
   },
   {
@@ -79,7 +79,7 @@ export const rightSidebarItems: RightSidebarItems = [
   },
   {
     icon: '/images/avatar-5.jpg',
-    notification: 4,
+    notification: 0,
     isActive: false,
   },
 ]
