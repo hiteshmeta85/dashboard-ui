@@ -3,9 +3,12 @@ import {sidebarItems} from "../constants/sidebarItems";
 import Image from "next/image";
 import SidebarItem from "./SidebarItem";
 
-const SidebarNavigation = () => {
+const SidebarNavigation = ({isMobileNavOpen}: {isMobileNavOpen: boolean}) => {
   return (
-    <div className='flex flex-col pb-[30px] px-[32px]'>
+    <div className={`absolute lg:static w-full flex flex-col z-10 
+    ${!isMobileNavOpen ? 'opacity-0 delay-0 duration-500 invisible w-0' : 'flex-1 opacity-100'} 
+    lg:w-full lg:visible lg:opacity-100 transition-all pb-[30px] px-[32px] bg-[#F7F8FA]`}
+    >
       {sidebarItems.map((item, index) => {
         return (
           <div key={index} className='flex flex-col py-[30px] border-b-[1px] border-[#E9EBF0]'>

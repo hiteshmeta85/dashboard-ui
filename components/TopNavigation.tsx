@@ -7,7 +7,7 @@ const TopNavigation = () => {
   const router = useRouter()
 
   return (
-    <div className='flex justify-between items-center px-[36px] py-[21px] border-b-[1px] border-[#E9EBF0]'>
+    <div className='hidden xl:flex justify-between items-center px-[36px] py-[21px] border-b-[1px] border-[#E9EBF0]'>
       <div className='flex gap-[32px]'>
         <div className='bg-white flex justify-between border-[1px] border-[#EBEEF2] rounded-md p-[12px] min-w-[200px] drop-shadow-sm'>
           <div className='flex items-center gap-3'>
