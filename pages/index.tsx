@@ -9,8 +9,10 @@ import RightSidebar from "../components/RightSidebar";
 import BoardSection from "../components/BoardSection";
 import CustomizeMenu from "../components/CustomizeMenu";
 import {motion} from 'framer-motion';
+import React, {useState} from "react";
 
 const Home: NextPage = () => {
+  let [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
   return (
     <Layout>
@@ -23,16 +25,16 @@ const Home: NextPage = () => {
         >
           <div className='flex items-center justify-between border-b-[1px] border-[#E9EBF0] py-[30px] px-[32px]'>
             <p className='font-semibold text-xl'>Dashboard</p>
-            <Image src="/images/menu_open.svg" alt="arrow" width={20} height={20} className='cursor-pointer'/>
+            <Image src="/images/menu_open.svg" alt="arrow" width={20} height={20} className='cursor-pointer' onClick={()=> setIsMobileNavOpen(!isMobileNavOpen)}/>
           </div>
           <UserSwitch/>
-          <SidebarNavigation/>
+          <SidebarNavigation isMobileNavOpen={isMobileNavOpen}/>
         </motion.div>
         <motion.div
           initial={{x: '-100vw'}}
           animate={{x: 0}}
           transition={{delay: 2.5, type: 'spring', stiffness: 30}}
-          className='flex-1'
+          className={`flex-1 ${isMobileNavOpen && 'hidden'} lg:block`}
         >
           <TopNavigation/>
           <TaskBoardNavigation/>
