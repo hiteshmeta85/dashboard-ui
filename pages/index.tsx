@@ -11,6 +11,7 @@ import CustomizeMenu from "../components/CustomizeMenu";
 import {motion} from 'framer-motion';
 
 const Home: NextPage = () => {
+
   return (
     <Layout>
       <div className='flex flex-col lg:flex-row bg-[#F7F8FA] min-h-screen'>
