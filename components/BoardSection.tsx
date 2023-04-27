@@ -1,10 +1,15 @@
 import React from 'react';
-import ProgressLayout from "./ProgressLayout";
-import {backlogTasks, doneTasks, inProgressTasks, todoTasks} from "../constants/taskItems";
+import ProgressLayout from './ProgressLayout';
+import {
+  backlogTasks,
+  doneTasks,
+  inProgressTasks,
+  todoTasks,
+} from '../constants/taskItems';
 
 const BoardSection = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 px-[16px] md:px-[36px] pb-[28px] gap-[24px]'>
+    <div className="grid grid-cols-1 gap-[24px] px-[16px] pb-[28px] md:grid-cols-2 md:px-[36px] xl:grid-cols-4">
       <ProgressLayout
         status={'Backlog Tasks'}
         taskTextColor={'text-[#CA8A04]'}

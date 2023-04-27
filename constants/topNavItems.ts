@@ -8,22 +8,22 @@ export interface TopNavItems extends Array<TopNavItem> {}
 export const topNavItems: TopNavItems = [
   {
     name: 'Dashboard',
-    path: '/'
+    path: '/',
   },
   {
     name: 'My Tasks',
-    path: '/my-tasks'
+    path: '/my-tasks',
   },
   {
     name: 'Reporting',
-    path: '/reporting'
+    path: '/reporting',
   },
   {
     name: 'Portfolios',
-    path: '/portfolios'
+    path: '/portfolios',
   },
   {
     name: 'Goals',
-    path: '/goals'
-  }
-]
+    path: '/goals',
+  },
+];

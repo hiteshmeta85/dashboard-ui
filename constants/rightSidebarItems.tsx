@@ -4,7 +4,7 @@ export interface RightSidebarItem {
   isActive: boolean;
 }
 
-export interface RightSidebarItems extends Array<RightSidebarItem>{}
+export interface RightSidebarItems extends Array<RightSidebarItem> {}
 
 export const rightSidebarItems: RightSidebarItems = [
   {
@@ -82,4 +82,4 @@ export const rightSidebarItems: RightSidebarItems = [
     notification: 0,
     isActive: false,
   },
-]
+];

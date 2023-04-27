@@ -8,26 +8,26 @@ export interface TaskBoardItems extends Array<TaskBoardItem> {}
 export const taskBoardItems: TaskBoardItems = [
   {
     name: 'Timeline',
-    section: '#'
+    section: '#',
   },
   {
     name: 'Calendar',
-    section: '#calendar'
+    section: '#calendar',
   },
   {
     name: 'Dashboard',
-    section: '#dashboard'
+    section: '#dashboard',
   },
   {
     name: 'Progress',
-    section: '#progress'
+    section: '#progress',
   },
   {
     name: 'Forms',
-    section: '#forms'
+    section: '#forms',
   },
   {
     name: 'More',
-    section: '#more'
-  }
-]
+    section: '#more',
+  },
+];

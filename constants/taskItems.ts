@@ -49,9 +49,7 @@ export const backlogTasks: Tasks = [
     id: '#BC05',
     defaultTag: 'Backlog',
     tags: ['Project'],
-    assignees: [
-      '/images/avatar-1.jpg',
-    ],
+    assignees: ['/images/avatar-1.jpg'],
     files: 2,
     comments: 4,
     attachments: 4,
@@ -61,10 +59,7 @@ export const backlogTasks: Tasks = [
     id: '#FTC07',
     defaultTag: 'Backlog',
     tags: [],
-    assignees: [
-      '/images/avatar-1.jpg',
-      '/images/avatar-2.jpg',
-    ],
+    assignees: ['/images/avatar-1.jpg', '/images/avatar-2.jpg'],
     files: 2,
     comments: 2,
     attachments: 4,
@@ -79,7 +74,7 @@ export const backlogTasks: Tasks = [
     comments: 0,
     attachments: 0,
   },
-]
+];
 
 export const todoTasks: Tasks = [
   {
@@ -123,15 +118,12 @@ export const todoTasks: Tasks = [
     id: '#FTC37',
     defaultTag: 'To Do',
     tags: [],
-    assignees: [
-      '/images/avatar-1.jpg',
-      '/images/avatar-2.jpg',
-    ],
+    assignees: ['/images/avatar-1.jpg', '/images/avatar-2.jpg'],
     files: 1,
     comments: 1,
     attachments: 2,
   },
-]
+];
 
 export const inProgressTasks: Tasks = [
   {
@@ -166,7 +158,7 @@ export const inProgressTasks: Tasks = [
     comments: 1,
     attachments: 2,
   },
-]
+];
 
 export const doneTasks: Tasks = [
   {
@@ -206,9 +198,7 @@ export const doneTasks: Tasks = [
     id: '#BC05',
     defaultTag: 'Done',
     tags: [],
-    assignees: [
-      '/images/avatar-1.jpg',
-    ],
+    assignees: ['/images/avatar-1.jpg'],
     files: 0,
     comments: 0,
     attachments: 0,
@@ -218,10 +208,7 @@ export const doneTasks: Tasks = [
     id: '#FTC07',
     defaultTag: 'Done',
     tags: [],
-    assignees: [
-      '/images/avatar-1.jpg',
-      '/images/avatar-2.jpg',
-    ],
+    assignees: ['/images/avatar-1.jpg', '/images/avatar-2.jpg'],
     files: 0,
     comments: 0,
     attachments: 0,
@@ -236,4 +223,4 @@ export const doneTasks: Tasks = [
     comments: 0,
     attachments: 0,
   },
-]
+];
