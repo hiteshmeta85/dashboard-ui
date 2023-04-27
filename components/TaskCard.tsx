@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from "next/image";
 import {Task} from "../constants/taskItems";
-import {motion} from "framer-motion";
-import {childrenVariants} from "../utils/animations";
 
 interface Props extends Task {
   taskTextColor: string;
@@ -13,8 +11,7 @@ const TaskCard = (props: Props) => {
   const {name, id, defaultTag, tags, assignees, files, comments, attachments, taskBackgroundColor, taskTextColor} = props;
 
   return (
-    <motion.div
-      variants={childrenVariants}
+    <div
       className='flex flex-col gap-3 bg-white p-[20px] rounded-lg drop-shadow-sm'
     >
       <div className='flex justify-between items-start gap-2'>
@@ -57,7 +54,7 @@ const TaskCard = (props: Props) => {
           </>}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -8,7 +8,6 @@ import TaskBoardNavigation from "../components/TaskBoardNavigation";
 import RightSidebar from "../components/RightSidebar";
 import BoardSection from "../components/BoardSection";
 import CustomizeMenu from "../components/CustomizeMenu";
-import {motion} from 'framer-motion';
 import React, {useState} from "react";
 
 const Home: NextPage = () => {
@@ -17,10 +16,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <div className='flex flex-col lg:flex-row bg-[#F7F8FA] min-h-screen'>
-        <motion.div
-          initial={{x: -300}}
-          animate={{x: 0}}
-          transition={{type: 'spring', stiffness: 50}}
+        <div
           className='overflow-y-scroll border-r-[1px] border-[#E9EBF0]'
         >
           <div className='flex items-center justify-between border-b-[1px] border-[#E9EBF0] py-[30px] px-[32px]'>
@@ -29,26 +25,20 @@ const Home: NextPage = () => {
           </div>
           <UserSwitch/>
           <SidebarNavigation isMobileNavOpen={isMobileNavOpen}/>
-        </motion.div>
-        <motion.div
-          initial={{x: '-100vw'}}
-          animate={{x: 0}}
-          transition={{delay: 2.5, type: 'spring', stiffness: 30}}
+        </div>
+        <div
           className={`flex-1 ${isMobileNavOpen && 'hidden'} lg:block`}
         >
           <TopNavigation/>
           <TaskBoardNavigation/>
           <CustomizeMenu/>
           <BoardSection/>
-        </motion.div>
-        <motion.div
-          initial={{x: 300}}
-          animate={{x: 0}}
-          transition={{delay: 1, type: 'spring', stiffness: 50}}
+        </div>
+        <div
           className='min-h-full hidden lg:block'
         >
           <RightSidebar/>
-        </motion.div>
+        </div>
       </div>
     </Layout>
   );

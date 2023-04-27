@@ -2,8 +2,6 @@ import Image from "next/image";
 import TaskCard from "./TaskCard";
 import React from "react";
 import {Tasks} from "../constants/taskItems";
-import {motion} from "framer-motion";
-import {containerVariants, childrenVariants} from "../utils/animations";
 
 interface Props {
   status: string;
@@ -26,10 +24,7 @@ const ProgressLayout = (props: Props) => {
           <Image src={'/images/more_horiz.svg'} alt={'Icon'} width={20} height={20} className='cursor-pointer'/>
         </div>
       </div>
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
+      <div
         className='flex flex-col gap-4'
       >
         {tasks.map((task, index) => {
@@ -37,13 +32,12 @@ const ProgressLayout = (props: Props) => {
             <TaskCard key={index} {...task} taskTextColor={taskTextColor} taskBackgroundColor={taskBackgroundColor}/>
           )
         })}
-        <motion.div
-          variants={childrenVariants}
+        <div
           className='bg-white flex justify-center py-1 rounded-lg drop-shadow-sm'
         >
           <Image src="/images/new_task_button.svg" alt="Icon" width={20} height={20} className='cursor-pointer'/>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </div>
   )
 }
