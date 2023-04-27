@@ -13,14 +13,15 @@
 
 ## Node Version
 
-> v16.15.1
+> v18.13.0
 
 ## Technologies Used & Links
 
 - [Next.js](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
+- [Prettier](https://prettier.io/)
+- [Eslint](https://eslint.org/)
 
 ## Prettier and Eslint Commands
 
