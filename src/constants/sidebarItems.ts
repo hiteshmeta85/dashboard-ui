@@ -9,7 +9,7 @@ export interface SidebarSection {
   items: SidebarItem[];
 }
 
-export interface SidebarItems extends Array<SidebarSection>{}
+export interface SidebarItems extends Array<SidebarSection> {}
 
 export const sidebarItems: SidebarItems = [
   {
@@ -69,8 +69,8 @@ export const sidebarItems: SidebarItems = [
         name: 'Settings',
         icon: '/images/tune.svg',
         notification: 2,
-      }
-    ]
+      },
+    ],
   },
   {
     section: 'PROJECTS',
@@ -105,6 +105,6 @@ export const sidebarItems: SidebarItems = [
         icon: '/images/add_circle.svg',
         notification: 0,
       },
-    ]
-  }
-]
+    ],
+  },
+];

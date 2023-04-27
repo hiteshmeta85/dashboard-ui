@@ -21,3 +21,25 @@
 - [Typescript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/)
+
+## Prettier and Eslint Commands
+
+Prettier Check
+```bash
+npx prettier --check .
+```
+
+Prettier Write
+```bash
+npx prettier --write .
+```
+
+Eslint Check
+```bash
+npx elsint .
+```
+
+Eslint Fix
+```bash
+npx eslint --fix .
+```
