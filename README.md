@@ -2,6 +2,8 @@
 
 #### [Website](https://dashboard-ui-x.vercel.app)
 
+![Sample](./public/sample.png)
+
 ## Installation
 
 1. Clone the repository
